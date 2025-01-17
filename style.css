@@ -1,0 +1,236 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+    line-height: 1.6;
+}
+.container {
+    max-width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.g-shh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.main-nav {
+    background: rgba(0, 0, 0, 0.8); 
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.2em;
+    text-transform: lowercase;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.circular-button {
+    display: inline-flex;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #1a1a1a;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-button:hover {
+    background-color: #333;
+}
+
+.circular-button.large {
+  font-size: 1.2rem;
+  padding: 15px 30px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 8rem auto 0 auto; /* Add margin-top */
+    padding: 20px;
+}
+
+.hero {
+  padding: 6rem 0;
+}
+.hero-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #e68130; /* Example highlight color, adjust as needed */
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #aaa;
+    max-width: 700px;
+}
+
+
+.services {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+.services-heading {
+    margin-bottom: 2rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-item {
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.services h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.testimonials {
+    background-color: #1a1a1a;
+    padding: 3rem 0;
+}
+.testimonials-heading {
+  margin-bottom: 2rem;
+}
+.testimonials h2{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+}
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    font-style: italic;
+    color: #ddd;
+    position: relative;
+}
+.testimonial cite {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.contact {
+    margin-top: 6rem;
+    text-align: center;
+    padding: 4rem 0;
+}
+.contact h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.contact-content {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: auto;
+}
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .services h2, .testimonials h2, .contact h2{
+      font-size: 2rem;
+    }
+    .section-title{
+        font-size: 2rem;
+    }
+    .circular-button {
+        padding: 8px 16px;
+    }
+    .circular-button.large {
+      font-size: 1rem;
+      padding: 12px 24px;
+    }
+     .nav-logo{
+      font-size: 1.2rem;
+     }
+    .nav-links {
+      gap: 10px;
+    }
+
+}
