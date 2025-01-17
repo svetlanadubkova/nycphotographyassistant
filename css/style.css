@@ -1,0 +1,388 @@
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --gray: #878787;
+  --light-gray: rgba(255,255,255,0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Header */
+header {
+  padding: 0.75rem 0;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left .location {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.email {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--white);
+}
+
+.email:hover {
+  color: var(--gray);
+  border-bottom-color: var(--gray);
+}
+
+/* Main content */
+section {
+  margin: 4rem 0;
+}
+
+section:first-child {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.intro-text {
+  margin-bottom: 3rem;
+}
+
+.bio {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  max-width: 65ch;
+  color: var(--white);
+}
+
+.specialty, .work-history {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  max-width: 65ch;
+  color: var(--gray);
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.expertise h3 {
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  list-style: none;
+}
+
+.skills li {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: var(--gray);
+}
+
+/* Experience Section */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.exp-category ul {
+  list-style: none;
+}
+
+.exp-category li {
+  font-size: 0.875rem;
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+}
+
+/* Services */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.service {
+  padding: 1.5rem;
+  background: var(--light-gray);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.service p {
+  font-size: 0.875rem;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.service-details {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.service-details li {
+  font-size: 0.8125rem;
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+}
+
+/* Selected Work */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.work-item {
+  padding: 1.5rem;
+  background: var(--light-gray);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.work-item p {
+  font-size: 0.875rem;
+  color: var(--gray);
+}
+
+/* Contact */
+.contact {
+  margin-bottom: 4rem;
+}
+
+.contact-intro {
+  font-size: 1rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+  max-width: 65ch;
+}
+
+.availability {
+  margin: 2rem 0;
+}
+
+.availability ul {
+  list-style: none;
+  columns: 2;
+}
+
+.availability li {
+  font-size: 0.875rem;
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+}
+
+.contact-links {
+  margin-top: 2rem;
+}
+
+.contact-link {
+  display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--white);
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 0.875rem;
+  margin-right: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--white);
+}
+
+/* Testimonials Footer */
+.testimonials-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  border-top: 1px solid var(--light-gray);
+  padding: 1.5rem 0;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.testimonials-track {
+  display: flex;
+  gap: 6rem;
+  animation: scroll 80s linear infinite;
+  white-space: nowrap;
+  padding: 0 2rem;
+}
+
+.testimonial {
+  flex-shrink: 0;
+  min-width: 400px;
+  max-width: 500px;
+}
+
+.testimonial p {
+  font-size: 0.875rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.testimonial cite {
+  font-size: 0.75rem;
+  color: var(--gray);
+  font-style: normal;
+  display: block;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/* Add padding to main content to prevent overlap with fixed footer */
+main {
+  padding-bottom: 120px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  section {
+    margin: 3rem 0;
+  }
+  
+  .service-list,
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .expertise-grid {
+    gap: 1.5rem;
+  }
+  
+  .availability ul {
+    columns: 1;
+  }
+  
+  .testimonials-footer {
+    padding: 1rem 0;
+  }
+  
+  .testimonials-track {
+    gap: 4rem;
+  }
+  
+  .testimonial {
+    min-width: 300px;
+  }
+  
+  .testimonial p {
+    font-size: 0.8125rem;
+  }
+  
+  .testimonial cite {
+    font-size: 0.6875rem;
+  }
+  
+  main {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.75rem;
+  }
+  
+  .service,
+  .work-item {
+    padding: 1rem;
+  }
+  
+  .testimonial {
+    min-width: 250px;
+  }
+  
+  .testimonial p {
+    font-size: 0.8125rem;
+  }
+}
